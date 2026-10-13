@@ -142,25 +142,30 @@ export default function FamilyHero() {
 }
 
 function FloatingShape({ index }: { index: number }) {
-  const [pos, setPos] = useState({ top: '50%', left: '50%' });
+  const [state, setState] = useState({
+    top: '50%',
+    left: '50%',
+    duration: 5
+  });
 
   useEffect(() => {
-    setPos({
+    setState({
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
+      duration: 5 + Math.random() * 5,
     });
   }, []);
 
   return (
     <motion.div
       className="absolute w-12 h-12 bg-copper-oxide/20 rounded-full blur-xl"
-      style={{ top: pos.top, left: pos.left }}
+      style={{ top: state.top, left: state.left }}
       animate={{
         x: [0, 20, -20, 0],
         y: [0, -20, 20, 0],
       }}
       transition={{
-        duration: 5 + Math.random() * 5,
+        duration: state.duration,
         repeat: Infinity,
         ease: "easeInOut",
       }}

@@ -1,19 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* Hyper-Luxury Palette */
-  --color-obsidian: #020202;
-  --color-alabaster: #fbfbfb;
-  --color-copper-oxide: #b87333;
-  --color-zinc: #1a1a1a;
+  /* Family Reaction Theme: Candy-Coated Neutrals */
+  --color-obsidian: #2D2A3B; /* Warm Dark Plum */
+  --color-alabaster: #FFF9F5; /* Creamy Vanilla */
+  --color-copper-oxide: #FF8B94; /* Pastel Strawberry */
+  --color-zinc: #B2E2F2; /* Baby Blue */
+  --color-sunset: #FFD166; /* Honey Gold */
+  --color-cyber: #A2D2FF; /* Soft Sky */
 
-  /* Typography */
-  --font-display: "Cabinet Grotesk", sans-serif;
-  --font-body: "Geist", sans-serif;
+  /* Friendly Typography */
+  --font-display: "Quicksand", sans-serif;
+  --font-body: "Nunito", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   /* Geometry */
-  --radius-luxury: 12px;
+  --radius-luxury: 24px;
+  --radius-friendly: 32px;
 }
 
 :root {
@@ -38,5 +41,5 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
 }

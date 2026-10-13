@@ -1,29 +1,31 @@
-import VoidHero from "@/components/sections/VoidHero";
-import OlfactoryMap from "@/components/sections/OlfactoryMap";
-import SpatialJourney from "@/components/sections/SpatialJourney";
-import TechnicalSpec from "@/components/sections/TechnicalSpec";
+import FamilyHero from "@/components/sections/FamilyHero";
+import ReactionGallery from "@/components/sections/ReactionGallery";
+import FamilyBio from "@/components/sections/FamilyBio";
+import ChannelStats from "@/components/sections/ChannelStats";
 
 export default function Home() {
   return (
     <main className="relative w-full bg-obsidian">
-      <VoidHero />
-      <OlfactoryMap />
-      <SpatialJourney />
-      <TechnicalSpec />
+      <div className="flex flex-col gap-24 pb-24">
+        <FamilyHero />
+        <FamilyBio />
+        <ReactionGallery />
+        <ChannelStats />
+      </div>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-zinc bg-obsidian">
+      <footer className="py-16 px-6 border-t border-zinc/20 bg-obsidian">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-alabaster font-display font-bold text-xl uppercase tracking-tighter">
-            Aethelgard
+          <div className="text-alabaster font-display font-bold text-2xl tracking-tighter">
+            The GShotIt Family
           </div>
-          <div className="flex gap-8 text-alabaster/40 font-mono text-[10px] uppercase tracking-widest">
+          <div className="flex gap-8 text-alabaster/60 font-mono text-xs uppercase tracking-widest">
+            <a href="#" className="hover:text-copper-oxide transition-colors">Family Values</a>
             <a href="#" className="hover:text-copper-oxide transition-colors">Privacy</a>
-            <a href="#" className="hover:text-copper-oxide transition-colors">Terms</a>
-            <a href="#" className="hover:text-copper-oxide transition-colors">Archive</a>
+            <a href="#" className="hover:text-copper-oxide transition-colors">Contact</a>
           </div>
-          <div className="text-alabaster/20 font-mono text-[10px] uppercase">
-            © 2026 Olfactory Architecture
+          <div className="text-alabaster/40 font-mono text-xs uppercase">
+            © 2026 Built with love by the GShotIt Family
           </div>
         </div>
       </footer>

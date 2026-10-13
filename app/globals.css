@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* Hyper-Luxury Palette */
+  --color-obsidian: #020202;
+  --color-alabaster: #fbfbfb;
+  --color-copper-oxide: #b87333;
+  --color-zinc: #1a1a1a;
+
+  /* Typography */
+  --font-display: "Cabinet Grotesk", sans-serif;
+  --font-body: "Geist", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Geometry */
+  --radius-luxury: 12px;
+}
+
+:root {
+  color-scheme: dark;
+  background-color: var(--color-obsidian);
+  color: var(--color-alabaster);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: var(--color-obsidian);
+}
+
+.bleed-left {
+  margin-left: -10vw;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.05em;
+}
